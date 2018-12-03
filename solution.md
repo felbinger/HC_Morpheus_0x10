@@ -1,6 +1,12 @@
 # Solution of [HC 0x10](https://challenges.the-morpheus.de) from [The Morpheus Tutorials](https://the-morpheus.de)
 
-## 1. Identify the service that is running on this port
+## 1. Identify which protocol the service that is running on port 20017 is using
+```
+$ nmap -sV 185.244.192.170 -p20017
+PORT      STATE SERVICE     VERSION
+20017/tcp open  netbios-ssn Samba smbd 3.X (workgroup: 8C31A8D072BD)
+```
+
 ## 2. Login using anonymous
 
 ## 3. Hacking Challenge
